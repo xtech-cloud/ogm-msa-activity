@@ -70,7 +70,7 @@ func (this *RecordDAO) Query(_query RecordQuery) ([]*Record, error) {
 	}
 
 	if "" != _query.Action {
-		db = db.Where("actionn = ?", _query.Action)
+		db = db.Where("action = ?", _query.Action)
 	}
 
 	if 0 != _query.StartTime {

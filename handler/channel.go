@@ -82,7 +82,13 @@ func (this *Channel) Fetch(_ctx context.Context, _req *proto.ChannelFetchRequest
 		return err
 	}
 
+	total, err := dao.Count()
+	if nil != err {
+		return err
+	}
+
 	_rsp.Channel = make([]*proto.ChannelEntity, len(channels))
+	_rsp.Total = total
 
 	for idx, v := range channels {
 		_rsp.Channel[idx] = &proto.ChannelEntity{
