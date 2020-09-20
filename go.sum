@@ -196,6 +196,7 @@ github.com/golang/mock v1.3.1/go.mod h1:sBzyDLLjw3U8JLTeZvSv8jJB+tU5PVekmnlKIyFU
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/protobuf v1.3.0/go.mod h1:Qd/q+1AKNOZr9uGQzbzCmRO6sUih6GTPZv6a1/R87v0=
 github.com/golang/protobuf v1.3.1/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
+github.com/golang/protobuf v1.3.2 h1:6nsPYzhq5kReh6QImI3k5qWzO4PEbvbIW2cwSfR/6xs=
 github.com/golang/protobuf v1.3.2/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/protobuf v1.3.4 h1:87PNWwrRvUSnqS4dlcBU/ftvOIBep4sYuBLlh6rX2wk=
 github.com/golang/protobuf v1.3.4/go.mod h1:vzj43D7+SQXF/4pzW/hwtAqwc6iTitCiVSaWz5lYuqw=
@@ -370,6 +371,8 @@ github.com/micro/go-plugins v2.0.1+incompatible h1:WYNrIeBhv+84ASevN22Z6ijGJf8bf
 github.com/micro/go-plugins/config/source/consul v0.0.0-20200119172437-4fe21aa238fd h1:GYfylvhtDoLoxfevBNDgjjLJwryEsCfHwPASIsrGITg=
 github.com/micro/go-plugins/config/source/consul/v2 v2.0.3 h1:hUzNsYrDmZ4i4ua7y/vhUxlbrW39hpGIDVVS4cWgR88=
 github.com/micro/go-plugins/config/source/consul/v2 v2.0.3/go.mod h1:nTuPTtkEpHVufMbiQFnO7enKwkNt6lI8AebeohBcawo=
+github.com/micro/go-plugins/config/source/consul/v2 v2.3.0 h1:ZM/UFEeHTCktecQ/6sKq/SdwDPxdy9zf/Z2vuP3Vk7E=
+github.com/micro/go-plugins/config/source/consul/v2 v2.3.0/go.mod h1:rOGS/Ef3LNBJK6ExiIxODPeeSHH9/INRn2PrKNGt+WA=
 github.com/micro/go-plugins/config/source/consul/v2 v2.9.1 h1:XeRTTccI9y0350tbrPdM68+c3rKJTRJquWRDXTZf4l8=
 github.com/micro/go-plugins/config/source/consul/v2 v2.9.1/go.mod h1:+3+XCOz1MTa6P8nggQ9xa71E63MOsgBygrg38/Xf6Jo=
 github.com/micro/go-plugins/logger/logrus/v2 v2.3.0 h1:oIoX4BzjwY8P6hPANY9KnQLp3lFI8R5vor2Xrte2MK8=
@@ -379,12 +382,16 @@ github.com/micro/go-plugins/logger/logrus/v2 v2.9.1/go.mod h1:tZ9rAgyKQnl0CAneVR
 github.com/micro/go-plugins/registry/consul v0.0.0-20200119172437-4fe21aa238fd h1:q5pybBgihtxJ+I68Vh51MJXcTGoV9jy58HkDryCLnb4=
 github.com/micro/go-plugins/registry/consul/v2 v2.0.3 h1:gdiPbrMLS7kRbUx0/Mk5bsWjVBB6k35zAAbySiO0mgQ=
 github.com/micro/go-plugins/registry/consul/v2 v2.0.3/go.mod h1:ZffsiTaaplO3k0PkaZS5EQFg5rDLiJvYEuiob0g9jFU=
+github.com/micro/go-plugins/registry/consul/v2 v2.3.0 h1:leX7yPBYvvs+poGyw/UWdGzcYmngoeIjr+fPdsqHx48=
+github.com/micro/go-plugins/registry/consul/v2 v2.3.0/go.mod h1:BftHiALzT0vPQkmtH9y+zbJ2MTNVZ16rRsSsxOfzf8M=
 github.com/micro/go-plugins/registry/consul/v2 v2.9.1 h1:3IRsR8B9rEsjY4UXvhlkItEi0F/48LBOGdF3J8qLPMY=
 github.com/micro/go-plugins/registry/consul/v2 v2.9.1/go.mod h1:k+12oSCZwN0lYcWeiJ2Y12FWLP02fwJEJk6+EV5n6Io=
 github.com/micro/go-plugins/registry/etcd/v2 v2.0.3/go.mod h1:UJhPH2dXyrUcuZKt0qsmxSWjPUUF0T/QiXQktxSHhHo=
 github.com/micro/go-plugins/registry/etcdv3 v0.0.0-20200119172437-4fe21aa238fd h1:oTqvYym0IwWVtewAECorh11cgymZb9AFR7xfdI93waQ=
 github.com/micro/go-plugins/registry/etcdv3/v2 v2.0.3 h1:S0MHxseeB1H+cp0fSD3GHsPAfKUsCNPGAt/6htHmM0I=
 github.com/micro/go-plugins/registry/etcdv3/v2 v2.0.3/go.mod h1:3bgaCsCg5BXjFUOHBOiSemE5cCTQtoXRb2fpsTixsw0=
+github.com/micro/go-plugins/registry/etcdv3/v2 v2.3.0 h1:nz/RUZt1xtjVYgaFL+OLVIVxmw5Js+niwbBM/WwRPJE=
+github.com/micro/go-plugins/registry/etcdv3/v2 v2.3.0/go.mod h1:CkaHYCq5vhBFeBB/hxfE+6xO6auAcyhrnqpNVOONxus=
 github.com/micro/go-plugins/registry/etcdv3/v2 v2.9.1 h1:5o2rfcmObTiu1ixEpdIw7Wn2qObvBO8MU9YpSY3dJR0=
 github.com/micro/go-plugins/registry/etcdv3/v2 v2.9.1/go.mod h1:wqj9V63R/0CkWgzzKMOhfoiKtRqlUkf+cwuTjY3x9HY=
 github.com/micro/go-plugins/registry/kubernetes/v2 v2.0.3/go.mod h1:YTQuE9TH/r5+CJBtKmCVdUQBaFGOTpqc6S4ETu1mP7A=
@@ -666,6 +673,7 @@ golang.org/x/net v0.0.0-20200202094626-16171245cfb2/go.mod h1:z5CRVTTTmAJ677TzLL
 golang.org/x/net v0.0.0-20200222125558-5a598a2470a0 h1:MsuvTghUPjX762sGLnGsxC3HM0B5r83wEtYcYR8/vRs=
 golang.org/x/net v0.0.0-20200222125558-5a598a2470a0/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
 golang.org/x/net v0.0.0-20200301022130-244492dfa37a/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
+golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e h1:3G+cUijn7XD+S4eJFddp53Pv7+slrESplyjG25HgL+k=
 golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e/go.mod h1:qpuaurCH72eLCgpAm/N6yyVIVM9cpaDIP3A8BGJEC5A=
 golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2 h1:eDrdRpKgkcCqKZQwyZRyeFZgfqt37SL7Kv3tok06cKE=
 golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2/go.mod h1:qpuaurCH72eLCgpAm/N6yyVIVM9cpaDIP3A8BGJEC5A=
@@ -715,6 +723,7 @@ golang.org/x/sys v0.0.0-20191110163157-d32e6e3b99c4 h1:Hynbrlo6LbYI3H1IqXpkVDOcX
 golang.org/x/sys v0.0.0-20191110163157-d32e6e3b99c4/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20200202164722-d101bd2416d5/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20200302150141-5c8b2ff67527/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd h1:xhmwyvizuTgC2qz7ZlMluP20uW+C3Rm0FD/WLDX8884=
 golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20200523222454-059865788121 h1:rITEj+UZHYC927n8GT97eC3zrpzXdb/voyeOuVKS46o=
 golang.org/x/sys v0.0.0-20200523222454-059865788121/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
