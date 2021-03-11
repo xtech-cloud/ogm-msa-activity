@@ -30,7 +30,7 @@ func main() {
 
 	// New Service
 	service := micro.NewService(
-		micro.Name("omo.msa.activity"),
+		micro.Name(config.Schema.Service.Name),
 		micro.Version(BuildVersion),
 		micro.RegisterTTL(time.Second*time.Duration(config.Schema.Service.TTL)),
 		micro.RegisterInterval(time.Second*time.Duration(config.Schema.Service.Interval)),
@@ -44,6 +44,7 @@ func main() {
 	subscriber.Setup(service.Server())
 
 	// Register Handler
+	proto.RegisterHealthyHandler(service.Server(), new(handler.Healthy))
 	proto.RegisterChannelHandler(service.Server(), new(handler.Channel))
 	proto.RegisterRecordHandler(service.Server(), new(handler.Record))
 

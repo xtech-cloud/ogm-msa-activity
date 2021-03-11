@@ -27,14 +27,19 @@ clean:
 
 .PHONY: call
 call:
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Subscribe '{"notification":"omo.msa.account.notification"}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Subscribe '{"notification":"omo.msa.application.notification"}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Subscribe '{"notification":"omo.msa.license.notification"}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Fetch '{"count":5}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Fetch '{"offset":1, "count":1}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Unsubscribe '{"notification":"omo.msa.license.notification"}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Channel.Fetch '{"count":5}'
-	MICRO_REGISTRY=consul micro call omo.msa.activity Record.Fetch ''
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Healthy.Echo '{"msg":"hello"}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Subscribe '{"notification":"omo.msa.account.notification"}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Subscribe '{"notification":"omo.msa.application.notification"}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Subscribe '{"notification":"omo.msa.license.notification"}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Fetch '{"count":5}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Fetch '{"offset":1, "count":1}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Unsubscribe '{"notification":"omo.msa.license.notification"}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Channel.Fetch '{"count":5}'
+	MICRO_REGISTRY=consul micro call omo.api.msa.activity Record.Fetch ''
+
+.PHONY: post
+post:
+	curl -X POST -d '{"msg":"hello"}' 127.0.0.1:8080/msa/activity/Healthy/Echo
 
 .PHONY: tcall
 tcall:
