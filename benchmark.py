@@ -3,7 +3,7 @@ import time
 import urllib.request
 from threading import Thread
 
-url = 'http://127.0.0.1:8080/msa/startkit/Echo/Call'
+url = 'http://127.0.0.1:8080/msa/activity/Healthy/Echo'
 params = {
         'msg':'hello',
         }
